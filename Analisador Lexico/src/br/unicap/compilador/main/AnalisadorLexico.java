@@ -24,7 +24,7 @@ public class AnalisadorLexico {
             System.out.println("Lexical ERROR " + ex.getMessage());
 
         } catch (Exception ex) {
-            System.out.println("Generic Error!");
+            System.out.println("Passou!");
         }
     }
 }

@@ -11,12 +11,12 @@ public class Token {
     public static final String TK_OPERATOR_relacional_maior_igual = "Operador maior igual";
     public static final String TK_OPERATOR_relacional_menor_igual = "Operador menor igual";
     public static final String TK_OPERATOR_relacional_diferenca = "Operador diferenca";
-    public static final String TK_OPERATOR_aritmetrico_mais= "Operador mais";
-    public static final String TK_OPERATOR_aritmetrico_menos= "Operador menos";
-    public static final String TK_OPERATOR_aritmetrico_multiplicacao= "Operador multiplicacao";
-    public static final String TK_OPERATOR_aritmetrico_divisao= "Operador divisao";
-    public static final String TK_OPERATOR_igual= "Operador igual";
-    public static final String TK_OPERATOR_atribuidor= "Operador atribuicao";
+    public static final String TK_OPERATOR_aritmetrico_mais = "Operador mais";
+    public static final String TK_OPERATOR_aritmetrico_menos = "Operador menos";
+    public static final String TK_OPERATOR_aritmetrico_multiplicacao = "Operador multiplicacao";
+    public static final String TK_OPERATOR_aritmetrico_divisao = "Operador divisao";
+    public static final String TK_OPERATOR_igual = "Operador igual";
+    public static final String TK_OPERATOR_atribuidor = "Operador atribuicao";
     public static final String TK_CARACTER_especial_abre_parenteses = "Abre parenteses";
     public static final String TK_CARACTER_especial_fecha_parenteses = "Fecha parenteses";
     public static final String TK_CARACTER_especial_abre_chave = "Abre chave";
@@ -56,6 +56,6 @@ public class Token {
 
     @Override
     public String toString() {
-        return "Token [type= " + type + ", text: " + text + " ]";
+        return "Token [tipo= " + type + ", texto: " + text + " ]";
     }
 }

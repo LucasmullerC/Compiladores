@@ -64,7 +64,7 @@ public class Scanner {
                         term += currentChar;
                         // Se tiver espaço
                     } else if (isSpace(currentChar)) {
-                        estado = 0;
+                        estado = 0; // Ignora colocando estado == "0"
                         // Se tiver algum operador
                     } else if (isOperator(currentChar)) {
                         estado = 5;
@@ -86,10 +86,9 @@ public class Scanner {
                     if (isLetra(currentChar) || isDigit(currentChar) || currentChar == '_') {
                         estado = 1;
                         term += currentChar;
-                        // Ou se ele tem algum espaço em branco.
                     } else if (isSpace(currentChar)) {
                         // Compara o termo com
-                        // "main","if","else","while","do","for","int","float","chat"
+                        // "main","if","else","while","do","for","int","float","char"
                         if (term.compareTo("main") == 0 || term.compareTo("if") == 0 || term.compareTo("else") == 0
                                 || term.compareTo("while") == 0 || term.compareTo("do") == 0
                                 || term.compareTo("for") == 0 || term.compareTo("int") == 0
