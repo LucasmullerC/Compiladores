@@ -92,9 +92,16 @@ public class Scanner {
                         if (term.compareTo("main") == 0 || term.compareTo("if") == 0 || term.compareTo("else") == 0
                                 || term.compareTo("while") == 0 || term.compareTo("do") == 0
                                 || term.compareTo("for") == 0 || term.compareTo("int") == 0
-                                || term.compareTo("float") == 0 || term.compareTo("char") == 0) {
+                                || term.compareTo("float") == 0 || term.compareTo("char") == 0
+                                || term.compareTo("lucas") == 0) {
                             estado = 11;
                             // Caso não...
+                        } else if (term.compareTo("anderson") == 0) {
+                            estado = 4;
+                        } else if (term.compareTo("flavio") == 0) {
+                            estado = 8;
+                        } else if (term.compareTo("raffael") == 0) {
+                            estado = 10;
                         } else {
                             estado = 2;
                         }
@@ -246,6 +253,7 @@ public class Scanner {
                     break;
             }
         }
+
     }
 
     // Verificadores
