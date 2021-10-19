@@ -37,7 +37,6 @@ public class Scanner {
         Token token;
         String term = "";
 
-        // Verifica se tem algo no conteúdo
         if (isEOF()) {
             return null;
         }
