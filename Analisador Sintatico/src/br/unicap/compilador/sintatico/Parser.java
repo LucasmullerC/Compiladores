@@ -62,7 +62,7 @@ public class Parser {
 	public void id() {
 		token = scanner.nextToken();
 		if(token.getType() != Token.TK_IDENTIFIER) {
-			throw new SyntaxException("Identifier Expected!");
+			throw new SyntaxException("Identificador Expected!");
 		}
 	}
 	
@@ -91,7 +91,7 @@ public class Parser {
 			}
 			token = scanner.nextToken();
 			if(token.getText().compareTo("else") != 0) {
-				throw new SyntaxException("Command else Expected!");
+				throw new SyntaxException("Commando else Expected!");
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_CARACTER_especial_abre_chave) {
@@ -119,7 +119,7 @@ public class Parser {
 	
 	public void atribuicao() {
 		if(token.getType() != Token.TK_IDENTIFIER) {
-			throw new SyntaxException("Identifier Expected!");
+			throw new SyntaxException("Identificador Expected!");
 		}
 		token = scanner.nextToken();
 		if(token.getType() != Token.TK_OPERATOR_atribuidor) {
@@ -163,7 +163,7 @@ public class Parser {
 			}
 			token = scanner.nextToken();
 			if(token.getText().compareTo("while") != 0) {
-				throw new SyntaxException("Command while Expected!");
+				throw new SyntaxException("Comando while Expected!");
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_CARACTER_especial_abre_parenteses) {
@@ -185,7 +185,7 @@ public class Parser {
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_IDENTIFIER) {
-				throw new SyntaxException("Identifier Expected!");
+				throw new SyntaxException("Identificador Expected!");
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_OPERATOR_atribuidor) {
@@ -205,7 +205,7 @@ public class Parser {
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_IDENTIFIER) {
-				throw new SyntaxException("Identifier Expected!");
+				throw new SyntaxException("Identificador Expected!");
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_OPERATOR_atribuidor) {
@@ -213,7 +213,7 @@ public class Parser {
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_IDENTIFIER) {
-				throw new SyntaxException("Identifier Expected!");
+				throw new SyntaxException("Identificador Expected!");
 			}
 			token = scanner.nextToken();
 			if(token.getType() != Token.TK_OPERATOR_aritmetrico_divisao && token.getType() != Token.TK_OPERATOR_aritmetrico_mais && token.getType() != Token.TK_OPERATOR_aritmetrico_menos && token.getType() != Token.TK_OPERATOR_aritmetrico_multiplicacao) {
