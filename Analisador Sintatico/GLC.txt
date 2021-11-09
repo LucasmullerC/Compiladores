@@ -1,0 +1,41 @@
+<programa> ::= int main "(" ")" <bloco>
+<bloco> ::= “{“ {<decl_var>}* {<comando>}* “}”
+<comando> ::= <comando_básico> | <iteração> | if "("<expr_relacional>")" "{" <comando> "}" else "{" <comando> "}"
+<comando_básico> ::= <atribuição> | <bloco>
+<iteração> ::= while "("<expr_relacional>")" "{" <comando> "}" | do "{" <comando> "}" while "("<expr_relacional>")" ";" | for "(" <id> "=" <inteiro> ";" | <id> "=" <float> ";" | <id> "=" <char> ";"  <expr_relacional> ";" <id> "=" <id> <op_arit> <inteiro> “)”  "{" <comando> "}"
+<atribuição> ::= <id> "=" <expr_arit> ";"
+<expr_relacional> ::= <expr_arit> <op_relacional> <expr_arit>
+
+<expr_arit> ::= <termo> <expr_arit'>
+<expr_arit'> ::= "+" <termo> <expr_arit'> | "-" <termo> <expr_arit'>
+
+<termo> ::= <fator> <termo'>
+<termo'> ::= "*" <fator> <termo'> | “/” <fator> <termo'>
+
+<fator> ::= “(“ <expr_arit> “)” | <id> | <float> | <inteiro> | <char>
+
+
+
+Declaracões:
+<decl_var> ::= <tipo> <id> ";"
+<tipo> ::= int | float | char
+
+
+Exemplo:
+
+int main ( ) { 
+int num12 ; num15 = 2 * 1 + 1 ; 
+float num6 ;
+while ( 2 * 4 - 3 > 2 / 2 + 2 ) {
+	if ( 2 * 4 - 3 > 2 / 2 + 2 ) {
+		while ( 2 * 4 - 3 > 2 / 2 + 2 ) {
+			num15 = 2 * 1 + 1 ;
+		}
+	}
+	else {
+		while ( 2 * 4 - 3 > 2 / 2 + 2 ) {
+			num15 = 2 * 1 + 1 ;
+		}
+	}
+}
+}
